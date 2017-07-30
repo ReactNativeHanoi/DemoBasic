@@ -1,10 +1,11 @@
 import React from 'react';
-import {
-  StyleSheet,
-  View,
-  TextInput,
-  Image,
-  Button,
-  Text,
-  AsyncStorage,
-} from 'react-native';
+import { StackNavigator } from 'react-navigation';
+import Main from '../main/Main';
+import SearchWorks from '../search/SearchWorks';
+
+export default Root = StackNavigator({
+	Main: { screen: Main },
+	SearchWorks: { screen: SearchWorks }
+}, {
+	headerMode: 'none'
+});
